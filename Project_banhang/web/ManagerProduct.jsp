@@ -1,9 +1,8 @@
 <%-- 
-    Document   : ManagerProduct
-    Created on : Dec 28, 2020, 5:19:02 PM
-    Author     : trinh
+    Document   : Menu
+    Created on : Feb 14, 2023, 9:02:13 AM
+    Author     : quynh
 --%>
-
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
