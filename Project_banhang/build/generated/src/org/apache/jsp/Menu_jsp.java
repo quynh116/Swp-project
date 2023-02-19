@@ -55,7 +55,7 @@ public final class Menu_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        <!------ Include the above in your HEAD tag ---------->\n");
       out.write("        <link href=\"https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css\" rel=\"stylesheet\" integrity=\"sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN\" crossorigin=\"anonymous\">\n");
       out.write("        <link href=\"css/style.css\" rel=\"stylesheet\" type=\"text/css\"/>\n");
-      out.write("        <link href=\"css/homecss.css\" rel=\"stylesheet\" type=\"text/css\"/>\n");
+      out.write("        <link href=\"css/menucss.css\" rel=\"stylesheet\" type=\"text/css\"/>\n");
       out.write("        <title>JSP Page</title>\n");
       out.write("    </head>\n");
       out.write("    <body>\n");
@@ -89,15 +89,15 @@ public final class Menu_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                            </div>\n");
       out.write("                        </div>\n");
       out.write("                        \n");
-      out.write("                        <a style=\"margin-right: -36px;\" href=\"#\"><img src=\"images/icon_login.png\" alt=\"login\"/></a>\n");
-      out.write("                        <div class=\"header_Login-name \" style=\"\"> Huynh pham\n");
+      out.write("                        <div class=\"header_Login-img\"><img  src=\"images/icon_login.png\" alt=\"login\"/>\n");
       out.write("                            <div class=\"header-Login header_Login-ht\">\n");
-      out.write("                                <p style=\"margin-top: 5px;\" class=\"header-Login-p\"><a  href=\"#\" >Tài khoản của tôi</a></p>\n");
+      out.write("                                <p style=\"margin-top: 5px;\" class=\"header-Login-p\"><a  href=\"#profile\" >Tài khoản của tôi</a></p>\n");
       out.write("                                <p class=\"header-Login-p\"><a  href=\"#\" >Địa chỉ của tôi</a></p>\n");
       out.write("                                <p style=\"\" class=\"header-Login-p\"><a  href=\"Login1.jsp\">Đăng Nhập</a></p>\n");
       out.write("                                       \n");
       out.write("                            </div>\n");
       out.write("                        </div>\n");
+      out.write("                        <div class=\"header_Login-name \" style=\"\"> Huynh pham</div>\n");
       out.write("                        \n");
       out.write("                        \n");
       out.write("                        <a class=\"btn btn-success btn-sm ml-3\" href=\"show\">\n");
@@ -113,6 +113,8 @@ public final class Menu_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                <img style=\"width: 1536px;\"  src=\"images/Rectangle.png\" alt=\"container-img\"/>\n");
       out.write("            </div>\n");
       out.write("        </section>\n");
+      out.write("        \n");
+      out.write("        \n");
       out.write("    </body>\n");
       out.write("</html>\n");
     } catch (Throwable t) {
