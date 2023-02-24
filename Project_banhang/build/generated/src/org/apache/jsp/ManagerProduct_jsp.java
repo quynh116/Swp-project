@@ -1,0 +1,271 @@
+package org.apache.jsp;
+
+import javax.servlet.*;
+import javax.servlet.http.*;
+import javax.servlet.jsp.*;
+
+public final class ManagerProduct_jsp extends org.apache.jasper.runtime.HttpJspBase
+    implements org.apache.jasper.runtime.JspSourceDependent {
+
+  private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
+
+  private static java.util.List<String> _jspx_dependants;
+
+  private org.glassfish.jsp.api.ResourceInjector _jspx_resourceInjector;
+
+  public java.util.List<String> getDependants() {
+    return _jspx_dependants;
+  }
+
+  public void _jspService(HttpServletRequest request, HttpServletResponse response)
+        throws java.io.IOException, ServletException {
+
+    PageContext pageContext = null;
+    HttpSession session = null;
+    ServletContext application = null;
+    ServletConfig config = null;
+    JspWriter out = null;
+    Object page = this;
+    JspWriter _jspx_out = null;
+    PageContext _jspx_page_context = null;
+
+    try {
+      response.setContentType("text/html;charset=UTF-8");
+      pageContext = _jspxFactory.getPageContext(this, request, response,
+      			null, true, 8192, true);
+      _jspx_page_context = pageContext;
+      application = pageContext.getServletContext();
+      config = pageContext.getServletConfig();
+      session = pageContext.getSession();
+      out = pageContext.getOut();
+      _jspx_out = out;
+      _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
+
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("<!DOCTYPE html>\r\n");
+      out.write("<html lang=\"en\">\r\n");
+      out.write("    <head>\r\n");
+      out.write("        <meta charset=\"utf-8\">\r\n");
+      out.write("        <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n");
+      out.write("        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\r\n");
+      out.write("        <title>Bootstrap CRUD Data Table for Database with Modal Form</title>\r\n");
+      out.write("        <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css?family=Roboto|Varela+Round\">\r\n");
+      out.write("        <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/icon?family=Material+Icons\">\r\n");
+      out.write("        <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css\">\r\n");
+      out.write("        <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css\">\r\n");
+      out.write("        <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js\"></script>\r\n");
+      out.write("        <script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js\"></script>\r\n");
+      out.write("        <link href=\"css/manager.css\" rel=\"stylesheet\" type=\"text/css\"/>\r\n");
+      out.write("        <style>\r\n");
+      out.write("            \r\n");
+      out.write("        </style>\r\n");
+      out.write("    <body>\r\n");
+      out.write("        \r\n");
+      out.write("        <div class=\"container\">\r\n");
+      out.write("            <div class=\"table-wrapper\">\r\n");
+      out.write("                <div class=\"table-title\">\r\n");
+      out.write("                    <div class=\"row\">\r\n");
+      out.write("                        <div class=\"col-sm-6\">\r\n");
+      out.write("                            <h2>Manage <b>Product</b></h2>\r\n");
+      out.write("                        </div>\r\n");
+      out.write("                        <div class=\"col-sm-6\">\r\n");
+      out.write("                            <a href=\"#addEmployeeModal\"  class=\"btn btn-success\" data-toggle=\"modal\"><i class=\"material-icons\">&#xE147;</i> <span>Add New Product</span></a>\r\n");
+      out.write("                            <a href=\"#deleteEmployeeModal\" class=\"btn btn-danger\" data-toggle=\"modal\"><i class=\"material-icons\">&#xE15C;</i> <span>Delete</span></a>\t\t\t\t\t\t\r\n");
+      out.write("                        </div>\r\n");
+      out.write("                    </div>\r\n");
+      out.write("                </div>\r\n");
+      out.write("                <table class=\"table table-striped table-hover\">\r\n");
+      out.write("                    <thead>\r\n");
+      out.write("                        <tr>\r\n");
+      out.write("                            <th>\r\n");
+      out.write("                                <span class=\"custom-checkbox\">\r\n");
+      out.write("                                    <input type=\"checkbox\" id=\"selectAll\">\r\n");
+      out.write("                                    <label for=\"selectAll\"></label>\r\n");
+      out.write("                                </span>\r\n");
+      out.write("                            </th>\r\n");
+      out.write("                            <th>ID</th>\r\n");
+      out.write("                            <th>Name</th>\r\n");
+      out.write("                            <th>Image</th>\r\n");
+      out.write("                            <th>Price</th>\r\n");
+      out.write("                            <th>Actions</th>\r\n");
+      out.write("                        </tr>\r\n");
+      out.write("                    </thead>\r\n");
+      out.write("                    <tbody>\r\n");
+      out.write("                        \r\n");
+      out.write("                            <tr>\r\n");
+      out.write("                                <td>\r\n");
+      out.write("                                    <span class=\"custom-checkbox\">\r\n");
+      out.write("                                        <input type=\"checkbox\" id=\"checkbox1\" name=\"options[]\" value=\"1\">\r\n");
+      out.write("                                        <label for=\"checkbox1\"></label>\r\n");
+      out.write("                                    </span>\r\n");
+      out.write("                                </td>\r\n");
+      out.write("                                <td>1</td>\r\n");
+      out.write("                                <td>Đắc nhân tâm}</td>\r\n");
+      out.write("                                <td>\r\n");
+      out.write("                                    <img style=\"width: 70px; height: 100px;\" src=\"images/Rectangle 30.png\" alt=\"dacnhantam.png\">\r\n");
+      out.write("                                </td>\r\n");
+      out.write("                                <td>100000<span>đ</span></td>\r\n");
+      out.write("                                <td>\r\n");
+      out.write("                                    <a href=\"#editEmployeeModal\"   class=\"edit\" data-toggle=\"modal\"><i class=\"material-icons\" data-toggle=\"tooltip\" title=\"Edit\">&#xE254;</i></a>\r\n");
+      out.write("                                    <a href=\"#deleteEmployeeModal\" class=\"delete\" data-toggle=\"modal\"><i class=\"material-icons\" data-toggle=\"tooltip\" title=\"Delete\">&#xE872;</i></a>\r\n");
+      out.write("                                </td>\r\n");
+      out.write("                            </tr>\r\n");
+      out.write("                            <tr>\r\n");
+      out.write("                                <td>\r\n");
+      out.write("                                    <span class=\"custom-checkbox\">\r\n");
+      out.write("                                        <input type=\"checkbox\" id=\"checkbox1\" name=\"options[]\" value=\"1\">\r\n");
+      out.write("                                        <label for=\"checkbox1\"></label>\r\n");
+      out.write("                                    </span>\r\n");
+      out.write("                                </td>\r\n");
+      out.write("                                <td>1</td>\r\n");
+      out.write("                                <td>Đắc nhân tâm}</td>\r\n");
+      out.write("                                <td>\r\n");
+      out.write("                                    <img style=\"width: 70px; height: 100px;\" src=\"images/Rectangle 30.png\" alt=\"dacnhantam.png\">\r\n");
+      out.write("                                </td>\r\n");
+      out.write("                                <td>100000<span>đ</span></td>\r\n");
+      out.write("                                <td>\r\n");
+      out.write("                                    <a href=\"#editEmployeeModal\"   class=\"edit\" data-toggle=\"modal\"><i class=\"material-icons\" data-toggle=\"tooltip\" title=\"Edit\">&#xE254;</i></a>\r\n");
+      out.write("                                    <a href=\"#deleteEmployeeModal\" class=\"delete\" data-toggle=\"modal\"><i class=\"material-icons\" data-toggle=\"tooltip\" title=\"Delete\">&#xE872;</i></a>\r\n");
+      out.write("                                </td>\r\n");
+      out.write("                            </tr>\r\n");
+      out.write("                        \r\n");
+      out.write("                    </tbody>\r\n");
+      out.write("                </table>\r\n");
+      out.write("                <div class=\"clearfix\">\r\n");
+      out.write("                    <div class=\"hint-text\">Showing <b>5</b> out of <b>25</b> entries</div>\r\n");
+      out.write("                    <ul class=\"pagination\">\r\n");
+      out.write("                        <li class=\"page-item disabled\"><a href=\"#\">Previous</a></li>\r\n");
+      out.write("                        <li class=\"page-item\"><a href=\"#\" class=\"page-link\">1</a></li>\r\n");
+      out.write("                        <li class=\"page-item\"><a href=\"#\" class=\"page-link\">2</a></li>\r\n");
+      out.write("                        <li class=\"page-item active\"><a href=\"#\" class=\"page-link\">3</a></li>\r\n");
+      out.write("                        <li class=\"page-item\"><a href=\"#\" class=\"page-link\">4</a></li>\r\n");
+      out.write("                        <li class=\"page-item\"><a href=\"#\" class=\"page-link\">5</a></li>\r\n");
+      out.write("                        <li class=\"page-item\"><a href=\"#\" class=\"page-link\">Next</a></li>\r\n");
+      out.write("                    </ul>\r\n");
+      out.write("                </div>\r\n");
+      out.write("            </div>\r\n");
+      out.write("        </div>\r\n");
+      out.write("        <!-- Edit Modal HTML -->\r\n");
+      out.write("        <div id=\"addEmployeeModal\" class=\"modal fade\">\r\n");
+      out.write("            <div class=\"modal-dialog modal-lg \">\r\n");
+      out.write("                <div class=\"modal-content\">\r\n");
+      out.write("                    <form action=\"add\" method=\"post\">\r\n");
+      out.write("                        <div class=\"modal-header\">\t\t\t\t\t\t\r\n");
+      out.write("                            <h4 class=\"modal-title\">Add Product</h4>\r\n");
+      out.write("                            <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-hidden=\"true\">&times;</button>\r\n");
+      out.write("                        </div>\r\n");
+      out.write("                        <div class=\"modal-body\">\t\t\t\t\t\r\n");
+      out.write("                            <div class=\"form-group\">\r\n");
+      out.write("                                <label>Name</label>\r\n");
+      out.write("                                <input name=\"name\" type=\"text\" class=\"form-control\" required>\r\n");
+      out.write("                            </div>\r\n");
+      out.write("                            <div class=\"form-group\">\r\n");
+      out.write("                                <label>Image</label>\r\n");
+      out.write("                                <input name=\"image\" type=\"text\" class=\"form-control\" required>\r\n");
+      out.write("                            </div>\r\n");
+      out.write("                            <div class=\"form-group\">\r\n");
+      out.write("                                <label>Price</label>\r\n");
+      out.write("                                <input name=\"price\" type=\"text\" class=\"form-control\" required>\r\n");
+      out.write("                            </div>\r\n");
+      out.write("                            <div class=\"form-group\">\r\n");
+      out.write("                                <label>Title</label>\r\n");
+      out.write("                                <textarea name=\"title\" class=\"form-control\" required></textarea>\r\n");
+      out.write("                            </div>\r\n");
+      out.write("                            <div class=\"form-group\">\r\n");
+      out.write("                                <label>Description</label>\r\n");
+      out.write("                                <textarea style=\"height: 400px\" name=\"description\" class=\"form-control\" required></textarea>\r\n");
+      out.write("                            </div>\r\n");
+      out.write("                            <div class=\"form-group\">\r\n");
+      out.write("                                <label>Category</label>\r\n");
+      out.write("                                <select name=\"category\" class=\"form-select\" aria-label=\"Default select example\">\r\n");
+      out.write("                                    \r\n");
+      out.write("                                </select>\r\n");
+      out.write("                            </div>\r\n");
+      out.write("\r\n");
+      out.write("                        </div>\r\n");
+      out.write("                        <div class=\"modal-footer\">\r\n");
+      out.write("                            <input type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\" value=\"Cancel\">\r\n");
+      out.write("                            <input type=\"submit\" class=\"btn btn-success\" value=\"Add\">\r\n");
+      out.write("                        </div>\r\n");
+      out.write("                    </form>\r\n");
+      out.write("                </div>\r\n");
+      out.write("            </div>\r\n");
+      out.write("        </div>\r\n");
+      out.write("        <!-- Edit Modal HTML -->\r\n");
+      out.write("        <div id=\"editEmployeeModal\" class=\"modal fade\">\r\n");
+      out.write("            <div class=\"modal-dialog\">\r\n");
+      out.write("                <div class=\"modal-content\">\r\n");
+      out.write("                    <form>\r\n");
+      out.write("                        <div class=\"modal-header\">\t\t\t\t\t\t\r\n");
+      out.write("                            <h4 class=\"modal-title\">Edit Employee</h4>\r\n");
+      out.write("                            <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-hidden=\"true\">&times;</button>\r\n");
+      out.write("                        </div>\r\n");
+      out.write("                        <div class=\"modal-body\">\t\t\t\t\t\r\n");
+      out.write("                            <div class=\"form-group\">\r\n");
+      out.write("                                <label>Name</label>\r\n");
+      out.write("                                <input type=\"text\" class=\"form-control\" required>\r\n");
+      out.write("                            </div>\r\n");
+      out.write("                            <div class=\"form-group\">\r\n");
+      out.write("                                <label>Email</label>\r\n");
+      out.write("                                <input type=\"email\" class=\"form-control\" required>\r\n");
+      out.write("                            </div>\r\n");
+      out.write("                            <div class=\"form-group\">\r\n");
+      out.write("                                <label>Address</label>\r\n");
+      out.write("                                <textarea class=\"form-control\" required></textarea>\r\n");
+      out.write("                            </div>\r\n");
+      out.write("                            <div class=\"form-group\">\r\n");
+      out.write("                                <label>Phone</label>\r\n");
+      out.write("                                <input type=\"text\" class=\"form-control\" required>\r\n");
+      out.write("                            </div>\t\t\t\t\t\r\n");
+      out.write("                        </div>\r\n");
+      out.write("                        <div class=\"modal-footer\">\r\n");
+      out.write("                            <input type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\" value=\"Cancel\">\r\n");
+      out.write("                            <input type=\"submit\" class=\"btn btn-info\" value=\"Save\">\r\n");
+      out.write("                        </div>\r\n");
+      out.write("                    </form>\r\n");
+      out.write("                </div>\r\n");
+      out.write("            </div>\r\n");
+      out.write("        </div>\r\n");
+      out.write("        <!-- Delete Modal HTML -->\r\n");
+      out.write("        <div id=\"deleteEmployeeModal\" class=\"modal fade\">\r\n");
+      out.write("            <div class=\"modal-dialog\">\r\n");
+      out.write("                <div class=\"modal-content\">\r\n");
+      out.write("                    <form>\r\n");
+      out.write("                        <div class=\"modal-header\">\t\t\t\t\t\t\r\n");
+      out.write("                            <h4 class=\"modal-title\">Delete Product</h4>\r\n");
+      out.write("                            <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-hidden=\"true\">&times;</button>\r\n");
+      out.write("                        </div>\r\n");
+      out.write("                        <div class=\"modal-body\">\t\t\t\t\t\r\n");
+      out.write("                            <p>Are you sure you want to delete these Records?</p>\r\n");
+      out.write("                            <p class=\"text-warning\"><small>This action cannot be undone.</small></p>\r\n");
+      out.write("                        </div>\r\n");
+      out.write("                        <div class=\"modal-footer\">\r\n");
+      out.write("                            <input type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\" value=\"Cancel\">\r\n");
+      out.write("                            <input type=\"submit\" class=\"btn btn-danger\" value=\"Delete\">\r\n");
+      out.write("                        </div>\r\n");
+      out.write("                    </form>\r\n");
+      out.write("                </div>\r\n");
+      out.write("            </div>\r\n");
+      out.write("        </div>\r\n");
+      out.write("        <script src=\"js/manager.js\" type=\"text/javascript\"></script>\r\n");
+      out.write("        <script>\r\n");
+      out.write("               \r\n");
+      out.write("        </script>\r\n");
+      out.write("    </body>\r\n");
+      out.write("</html>");
+    } catch (Throwable t) {
+      if (!(t instanceof SkipPageException)){
+        out = _jspx_out;
+        if (out != null && out.getBufferSize() != 0)
+          out.clearBuffer();
+        if (_jspx_page_context != null) _jspx_page_context.handlePageException(t);
+        else throw new ServletException(t);
+      }
+    } finally {
+      _jspxFactory.releasePageContext(_jspx_page_context);
+    }
+  }
+}

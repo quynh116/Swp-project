@@ -1,8 +1,4 @@
-<%-- 
-    Document   : ManagerProduct
-    Created on : Dec 28, 2020, 5:19:02 PM
-    Author     : trinh
---%>
+
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -21,12 +17,13 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <link href="css/manager.css" rel="stylesheet" type="text/css"/>
         <style>
-            img{
-                width: 200px;
-                height: 120px;
+            .modal-content-body{
+                width: 600px;
+                margin-left: -103px;
             }
         </style>
     <body>
+        
         <div class="container">
             <div class="table-wrapper">
                 <div class="table-title">
@@ -57,7 +54,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <c:forEach items="${listP}" var="o">
+                        
                             <tr>
                                 <td>
                                     <span class="custom-checkbox">
@@ -65,18 +62,36 @@
                                         <label for="checkbox1"></label>
                                     </span>
                                 </td>
-                                <td>${o.id}</td>
-                                <td>${o.name}</td>
+                                <td>1</td>
+                                <td>Đắc nhân tâm}</td>
                                 <td>
-                                    <img src="${o.image}">
+                                    <img style="width: 70px; height: 100px;" src="images/Rectangle 30.png" alt="dacnhantam.png">
                                 </td>
-                                <td>${o.price} $</td>
+                                <td>100000<span>đ</span></td>
                                 <td>
                                     <a href="#editEmployeeModal"   class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
                                     <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
                                 </td>
                             </tr>
-                        </c:forEach>
+                            <tr>
+                                <td>
+                                    <span class="custom-checkbox">
+                                        <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                        <label for="checkbox1"></label>
+                                    </span>
+                                </td>
+                                <td>1</td>
+                                <td>Đắc nhân tâm}</td>
+                                <td>
+                                    <img style="width: 70px; height: 100px;" src="images/Rectangle 30.png" alt="dacnhantam.png">
+                                </td>
+                                <td>100000<span>đ</span></td>
+                                <td>
+                                    <a href="#editEmployeeModal"   class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+                                    <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+                                </td>
+                            </tr>
+                        
                     </tbody>
                 </table>
                 <div class="clearfix">
@@ -94,9 +109,9 @@
             </div>
         </div>
         <!-- Edit Modal HTML -->
-        <div id="addEmployeeModal" class="modal fade">
-            <div class="modal-dialog">
-                <div class="modal-content">
+        <div id="addEmployeeModal" class="modal fade" >
+            <div class="modal-dialog modal-lg " >
+                <div class="modal-content modal-content-body ">
                     <form action="add" method="post">
                         <div class="modal-header">						
                             <h4 class="modal-title">Add Product</h4>
@@ -121,14 +136,12 @@
                             </div>
                             <div class="form-group">
                                 <label>Description</label>
-                                <textarea name="description" class="form-control" required></textarea>
+                                <textarea style="height: 400px" name="description" class="form-control" required></textarea>
                             </div>
                             <div class="form-group">
                                 <label>Category</label>
                                 <select name="category" class="form-select" aria-label="Default select example">
-                                    <c:forEach items="${listC}" var="o">
-                                        <option value="${o.id}">${o.name}</option>
-                                    </c:forEach>
+                                    
                                 </select>
                             </div>
 

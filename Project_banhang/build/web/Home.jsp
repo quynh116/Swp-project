@@ -58,7 +58,7 @@
                         <div class="card-body">
                             <img style="" class="img-fluid" src="images/Rectangle 30.png" />
                             <h5 class="card-title">Đắc Nhân Tâm </h5>
-                            <p class="card-text">How to win friends and Influence People của Dale Carnegie là 
+                            <p class="card-text ">How to win friends and Influence People của Dale Carnegie là 
                                 quyển sách nổi tiếng nhất, bán chạy nhất và có tầm ảnh hưởng nhất của mọi thời đại.</p>
                             <p class="bloc_left_price">100.000đ</p>
                         </div>
@@ -72,7 +72,7 @@
                                 <div class="card ">
                                     <img style=" width: 180px;height: 220px;margin-left: 35px;margin-top: 5px;"  class="card-img-top" src="images/Rectangle 30.png" alt="Card image cap">
                                     <div style="margin-top: -15px;" class="card-body">
-                                        <h4 class="card-title show_txt"><a href="#" title="View Product">Đắc Nhân Tâm</a></h4>
+                                        <h4 class="card-title show_txt"><a href="Detail.jsp" title="View Product">Đắc Nhân Tâm</a></h4>
                                         <p style="color: red; font-size: 18px; font-weight: 500;margin-top: -10px;" class="card-text show_txt">100.000đ</p>
                                         <div style="margin-top: -10px;" class="row">
                                             <div style="width: 50px;" class="col">
@@ -181,7 +181,24 @@
                                     </div>
                                 </div>
                             </div>
-                         
+                         <div style="margin-bottom: 20px" class="col-12 col-md-6 col-lg-4">
+                                <div class="card ">
+                                    <img style=" width: 180px;height: 220px;margin-left: 35px;margin-top: 5px;"  class="card-img-top" src="images/Rectangle 30.png" alt="Card image cap">
+                                    <div style="margin-top: -15px;" class="card-body">
+                                        <h4 class="card-title show_txt"><a href="#" title="View Product">Đắc Nhân Tâm</a></h4>
+                                        <p style="color: red; font-size: 18px; font-weight: 500;margin-top: -10px;" class="card-text show_txt">100.000đ</p>
+                                        <div style="margin-top: -10px;" class="row">
+                                            <div style="width: 50px;" class="col">
+                                                
+                                                <a style="font-size: 13px;" href="#" class="btn btn-danger btn-block ">Mua Ngay</a>
+                                            </div>
+                                            <div style="width: 100%; margin-left: -15px;" class="col">
+                                                <a style="font-size: 13px;" href="#" class="btn btn-success btn-block">Thêm Giỏ Hàng</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                     </div>
                     <button style="margin-left: 360px;" onclick="loadMore()" class="btn btn-primary">Load more</button>
                 </div>
